@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Astronomy Picture of the Day Archive</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+   <link rel="shortcut icon" href="./img/foguete.ico" type="image/x-icon">
+   <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <header class="header container">
+
+    <img src="./img/logo.png" width="140" height="80"  alt="Logo da Nada">
+    <nav class="header-menu">
+      <a class="header-menu-item" href="index.html" >Index</a>>
+      <a class="header-menu-item" href="#">Search</a>>
+      <a class="header-menu-item" href="#">Today's Picture </a>>
+      <a class="header-menu-item" href="#">About</a>>
+    </nav>
+  </header>
+
+ <!--  <main class="main-content">
+    <section class="sect">
+      <input id="date" type="date" min="1995-06-16">
+      <button class="sect-btn" type="button" onclick="buscar()">Procurar</button>
+    </section>
+    
+    <article class="artc">
+      <h2 class="artc-ttl__nasa"></h2>
+      <p class="artc-txt__nasa"></p>
+      <img class="artc-img__nasa" />
+      <iframe class="artc-vd__nasa" src="" frameborder="0"></iframe>
+    </article>
+  </main> -->
+
+  <main class="main">
+    <section>
+        <input type="date" name="date" id="date" min="1995-06-16">
+        <button class="botao-pesquisar" type="button" onclick="buscar()">Pesquisar</button>
+
+    </section>
+
+    <section class="artc">
+      <h1 class="artc-ttl__nasa"></h1>
+      <p class="artc-txt__nasa"></p>
+      <img class="artc-img__nasa"/>
+      <iframe class="artc-vd__nasa" src="" frameborder="0"></iframe>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p class="footer-copy">Desenvolvido por José William © Todos os direitos reservados.</p>
+      <a class="footer-rede" href="https://github.com/williamfirmino92"><img src="./img/redes/github.png" width="32" height="32" alt="GitHub"></a>
+      <a class="footer-rede" href="https://www.linkedin.com/in/william-firmino-87a2ba80/"><img src="./img/redes/linkedin.png" width="32" height="32" alt="Linkedin"></a>
+  </footer>
+    <script src="./script.js"></script>
+    <script src="./vendor/jquery-3.6.0.min.js"></script>
+</body>
+</html>

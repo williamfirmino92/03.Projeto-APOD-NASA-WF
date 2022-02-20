@@ -1,0 +1,162 @@
+*{
+  margin: 0px;
+  padding: 0;
+}
+
+body {
+  background: url('./img/img1.jpg');
+  background-size: cover;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.container {
+  box-sizing: border-box;
+  max-width: 1200px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.header-menu{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.header-menu-item {
+  display: inline-block;
+  position: relative;
+  color: #ffffff;
+  font: 400 1.125rem/1.35 "Poppins", sans-serif;
+  text-decoration: none;
+}
+
+.header-menu-item:hover {
+  color: #E83921;
+}
+
+.header-menu-item:after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0px;
+  background: #0E3C91;
+  margin-top: 4px;
+  transition: 0.3s;
+  position: absolute;
+}
+
+.header-menu-item:hover::after,
+.header-menu-item.ativo::after {
+  width: 100%;
+}
+
+.main{
+display: flex;
+align-items: center;
+flex-direction: column;
+}
+
+#date {
+  padding: 7px;
+  box-shadow: 0 1px 2px;
+  border-radius: 0 5px 5px 0;
+}
+
+.botao-pesquisar{
+  display: inline-block;
+  padding: 10px 22px;
+  background: linear-gradient(#0E3C91, #E83921);
+  border-radius: 4px;
+  text-transform: uppercase;
+  color: #ededed;
+  font: 600 1rem/1 "Poppins", sans-serif;
+  max-width: max-content;
+  border: none;
+  cursor: pointer;
+}
+
+.botao-pesquisar:hover {
+  background: linear-gradient(#E83921, #0E3C91);
+}
+/* ---------------------------------------------------------------------------------------- */
+.artc {
+  display: flex;
+  align-items: center;
+}
+
+.artc {
+  flex-direction: column;
+}
+
+.artc {
+  border-radius: 5px;
+  visibility: hidden;
+  width: 60%;
+  height: 100%;
+  box-shadow: -3px -3px 7px rgba(0, 0, 0, 0.5), 5px 5px 5px rgba(0, 0, 0, 0.7);
+  margin: 1% 0;
+}
+
+.artc-ttl__nasa,
+.artc-txt__nasa {
+  padding: 0.5% 1%;
+}
+
+.artc-ttl__nasa {
+  align-self: flex-start;
+  font-size: 1.5rem;
+  color: rgb(255, 255, 255);
+}
+
+.artc-txt__nasa {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.artc-img__nasa,
+.artc-vd__nasa {
+  margin-top: 0.5%;
+  width: 25%;
+  height: 35%;
+  border-radius: 4px;
+  box-shadow: -1px -1px 3px rgba(255, 255, 255, 0.2), 2px 2px 3px rgba(0, 0, 0, 0.7);
+}
+
+.artc{
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(6px) saturate(150%);
+}
+
+/* ---------------------------------------------------------------------------------------- */
+/* Estilos do Footer */
+
+.footer{
+  display: flex;
+}
+
+.footer-copy{
+  color: #9c9c9c;
+  font: 500 1.125rem/1.35 "Roboto", sans-serif;
+  margin-top: 7px;
+}
+
+.footer-rede{
+  padding-left: 10px;
+}
